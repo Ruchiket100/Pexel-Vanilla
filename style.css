@@ -1,0 +1,97 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Almarai', sans-serif;
+}
+
+body {
+    overflow-x: hidden;
+}
+
+header {
+    height: 40vh;
+    margin: auto;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.527), rgba(0, 0, 0, 0.5)), url(./images/logo.jpeg);
+    background-position: center;
+    background-size: cover;
+}
+
+.nav-bar {
+    height: 10vh;
+    padding: 1rem 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: row;
+}
+
+.logo svg {
+    margin-right: 0.5rem;
+}
+
+.logo h2 {
+    color: white;
+    font-weight: 700;
+}
+
+.github-link {
+    font-size: 2rem;
+    color: white;
+    text-decoration: none;
+}
+
+.search-form {
+    width: 50%;
+    height: 70%;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.search-form input {
+    height: 3rem;
+    min-width: 50%;
+    padding: 1rem 2rem;
+    font-size: 1.4rem;
+    border: 2px solid white;
+    border-radius: 10px 0 0 10px;
+    outline: none;
+}
+
+.search-form button {
+    height: 3rem;
+    width: 3rem;
+    font-size: 1.5rem;
+    border: none;
+    border-left: 2px solid white;
+    border-radius: 0 10px 10px 0;
+    background-color: white;
+    cursor: pointer;
+}
+
+.nav-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.nav-button button {
+    margin: 2rem 0 2rem 0;
+    height: 3rem;
+    width: 7rem;
+    font-size: 2rem;
+    color: white;
+    background-color: #42d6ae;
+    outline: none;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+}
