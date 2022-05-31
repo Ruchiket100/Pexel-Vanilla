@@ -101,7 +101,7 @@ header {
     width: 80%;
     margin: 2rem auto;
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(310px, 1fr));
     row-gap: 5rem;
     column-gap: 3rem;
 }
@@ -130,9 +130,14 @@ header {
 }
 
 @media (max-width : 950px) {
-
-
     .search-form {
         width: 90%;
+    }
+}
+
+
+@media (max-width : 650px) {
+    .photo-div {
+        /* margin: auto; */
     }
 }
