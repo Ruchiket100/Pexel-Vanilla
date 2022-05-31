@@ -101,22 +101,38 @@ header {
     width: 80%;
     margin: 2rem auto;
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+    row-gap: 5rem;
+    column-gap: 3rem;
+}
 
+
+
+.photo-div img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.photo-desc {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 2rem 0;
+}
+
+.photo-desc p {
+    color: rgb(14, 14, 14);
+}
+
+.photo-desc a {
+    color: #41907b;
 }
 
 @media (max-width : 950px) {
-    .content {
-        grid-template-columns: 1fr 1fr;
-    }
+
 
     .search-form {
         width: 90%;
-    }
-}
-
-@media (max-width : 600px) {
-    .content {
-        grid-template-columns: 1fr;
     }
 }
